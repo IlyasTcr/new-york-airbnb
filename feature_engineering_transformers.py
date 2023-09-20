@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.model_selection import KFold
 from category_encoders import MEstimateEncoder
+from functools import reduce
 
 
 class StringMatchTransformer(BaseEstimator, TransformerMixin):
